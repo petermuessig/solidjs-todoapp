@@ -19,7 +19,7 @@ const TodoEdit = (props) => {
 
                 <div>
                     <ui5-label>Due:</ui5-label><br/>
-                    <ui5-date-picker ref={due} style="width: 100%;" format-pattern="yyyy-MM-dd" value={props.due}/>
+                    <ui5-date-picker ref={due} style="width: 100%;" format-pattern="dd/MM/yyyy" value={props.due}/>
                 </div>
             </div>
 
