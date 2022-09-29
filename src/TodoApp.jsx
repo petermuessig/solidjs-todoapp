@@ -118,7 +118,9 @@ const TodoApp = () => {
     },
     languageSelected = (event) => {
       languageSwitch.close();
-      document.location.href = `${new URL(document.location.href).origin}?sap-ui-language=${event.detail.targetItem.dataset.theme || "en"}`;
+      const url = new URL(document.location.href);
+      url.search = `?sap-ui-language=${event.detail.targetItem.dataset.theme || "en"}`;
+      document.location.href = url.toString();
     };
 
   // ************
@@ -146,7 +148,7 @@ const TodoApp = () => {
         <div class="todo__create fd-layout-panel">
           <div class="todo__create-wrapper fd-layout-panel__body">
             <ui5-input class="todo__task-name" ref={newEditTitle} placeholder={i18nBundle.getText("TODO_ENTER")} />
-            <ui5-date-picker  class="todo__task-date" ref={newEditDue} format-pattern="dd/MM/yyyy" />
+            <ui5-date-picker  class="todo__task-date" ref={newEditDue} format-pattern="yyyy-MM-dd"/>
             <ui5-button class="todo__task-btn" on:click={addTodo} design="Emphasized">{i18nBundle.getText("TODO_ADD")}</ui5-button>
           </div>
         </div>
