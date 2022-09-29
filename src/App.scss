@@ -1,0 +1,45 @@
+@import '../node_modules/@fundamental-styles/common-css/dist/sass/common-css-mixins.scss';
+
+.todo-wrapper{
+    @include sap-flex-justify(center);
+    @include sap-flex(column);
+
+    height: 100%;
+}
+
+.todo {
+    @include sap-flex(column);
+
+    width: 100%;
+    background-color: var(--sapBackgroundColor);
+    flex: auto;
+
+    &__create {
+        @include sap-margin(small);
+    }
+
+    &__task-name {
+        flex: auto;
+    }
+
+    &__create-wrapper {
+        @include sap-flex-gap(tiny);
+        @include sap-padding(medium, x);
+        @include sap-flex-wrap(wrap);
+        @include sap-flex-justify(space-between);
+
+        @include sap-media-max-width(400px) {
+            @include sap-flex(column);
+
+            .todo__task-name {
+                width: 100%;
+            }
+        }
+
+        @include sap-media-range-width(401px, 514px) {
+            .todo__task-date {
+                flex: auto;
+            }
+        }
+    }
+}
