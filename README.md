@@ -1,33 +1,34 @@
+# solidjs-todoapp
+
+This project uses solid [SolidJS](https://www.solidjs.com/) together with [Fundamental Library Styles](https://fundamental-styles.netlify.app/) and [UI5 Web Components](https://sap.github.io/ui5-webcomponents/) to implement a todo application from scratch. Both libraries are a perfect symbiosis and helps you to quickly create an application following the [SAP Fiori Design](https://experience.sap.com/fiori-design/).
+
 ## Usage
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
-
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
-
-```bash
-$ npm install # or pnpm install or yarn install
-```
-
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+The project is using [pnpm](https://pnpm.io). To get started ensure that pnpm is installed globally on your machine via `npm i -g pnpm`.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm dev` or `npm start`
+### `pnpm dev` or `pnpm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
-### `npm run build`
+### `pnpm build`
 
 Builds the app for production to the `dist` folder.<br>
 It correctly bundles Solid in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+### `pnpm serve`
+
+Runs the app in the productive mode.<br>
+Open [http://localhost:4173](http://localhost:4173) to view it in the browser.
 
 ## Deployment
 

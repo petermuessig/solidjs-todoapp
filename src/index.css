@@ -7,3 +7,7 @@ body,
 #root {
   height: 100%;
 }
+
+:not(:defined) {
+  display: none;
+}

@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fundamental-styles/common-css': 0.25.0-rc.28
+  '@fundamental-styles/common-css': 0.25.0-rc.26
+  '@sap-theming/theming-base-content': ^11.1.41
   '@ui5/webcomponents': ^1.7.1
   '@ui5/webcomponents-base': ^1.7.1
-  fundamental-styles: 0.25.0-rc.28
+  '@ui5/webcomponents-fiori': ^1.7.1
+  '@ui5/webcomponents-icons': ^1.7.1
+  '@ui5/webcomponents-theming': ^1.7.1
+  fundamental-styles: ^0.25.0-rc.26
   node-sass: ^7.0.3
   sass: ^1.55.0
   solid-js: ^1.5.1
@@ -12,9 +16,13 @@ specifiers:
   vite-plugin-solid: ^2.3.0
 
 dependencies:
-  '@fundamental-styles/common-css': 0.25.0-rc.28
+  '@fundamental-styles/common-css': 0.25.0-rc.26
+  '@sap-theming/theming-base-content': 11.1.41
   '@ui5/webcomponents': 1.7.1
   '@ui5/webcomponents-base': 1.7.1
+  '@ui5/webcomponents-fiori': 1.7.1
+  '@ui5/webcomponents-icons': 1.7.1
+  '@ui5/webcomponents-theming': 1.7.1
   fundamental-styles: 0.25.0-rc.28
   solid-js: 1.5.1
 
@@ -342,8 +350,8 @@ packages:
     dev: true
     optional: true
 
-  /@fundamental-styles/common-css/0.25.0-rc.28:
-    resolution: {integrity: sha512-OHtLNYPOsV6IH19ppI2cd9WP90Q+1OCkouhPfEpyaIZuuTUDtMvU6MDdd+eCI+DcDzZwVKrATMbFnugGwggGwQ==}
+  /@fundamental-styles/common-css/0.25.0-rc.26:
+    resolution: {integrity: sha512-1UHB1BefYvu+6rY1ovspyq74OpVoMVoBRJWIyskirP15/HibaJ2A3zNFUIZdy83J8ggiYQtqIDS/uglgvAebWw==}
     dependencies:
       '@sap-theming/theming-base-content': 11.1.41
     dev: false
@@ -432,6 +440,16 @@ packages:
       lit-html: 2.3.1
     dev: false
 
+  /@ui5/webcomponents-fiori/1.7.1:
+    resolution: {integrity: sha512-nTrvqT5lsKE974w2Fa3zinlxKeWOBhk70QkPhgUynEJzAKWveNezJ2c6345PcF0n/uTDYavSCAheQpXUPZytwg==}
+    dependencies:
+      '@ui5/webcomponents': 1.7.1
+      '@ui5/webcomponents-base': 1.7.1
+      '@ui5/webcomponents-icons': 1.7.1
+      '@ui5/webcomponents-theming': 1.7.1
+      '@zxing/library': 0.18.6
+    dev: false
+
   /@ui5/webcomponents-icons/1.7.1:
     resolution: {integrity: sha512-++lL5qew3eLOqxhXmMiPAjtcpXjMRsz8mxr/iFHt+yJ2bs9MuIeVG6Bu5ViDwbzREVSwEV3hiXkPyMHKJ1nGxQ==}
     dependencies:
@@ -459,6 +477,21 @@ packages:
       '@ui5/webcomponents-localization': 1.7.1
       '@ui5/webcomponents-theming': 1.7.1
     dev: false
+
+  /@zxing/library/0.18.6:
+    resolution: {integrity: sha512-bulZ9JHoLFd9W36pi+7e7DnEYNJhljYjZ1UTsKPOoLMU3qtC+REHITeCRNx40zTRJZx18W5TBRXt5pq2Uopjsw==}
+    engines: {node: '>= 10.4.0'}
+    dependencies:
+      ts-custom-error: 3.2.2
+    optionalDependencies:
+      '@zxing/text-encoding': 0.9.0
+    dev: false
+
+  /@zxing/text-encoding/0.9.0:
+    resolution: {integrity: sha512-U/4aVJ2mxI0aDNI8Uq0wEhMgY+u4CNtEb0om3+y3+niDAsoTCOB33UF0sxpzqzdqXLqmvc+vZyAt4O8pPdfkwA==}
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /abbrev/1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -2376,6 +2409,11 @@ packages:
     dependencies:
       glob: 7.2.3
     dev: true
+
+  /ts-custom-error/3.2.2:
+    resolution: {integrity: sha512-u0YCNf2lf6T/vHm+POKZK1yFKWpSpJitcUN3HxqyEcFuNnHIDbyuIQC7QDy/PsBX3giFyk9rt6BFqBAh2lsDZQ==}
+    engines: {node: '>=14.0.0'}
+    dev: false
 
   /ts-toolbelt/9.6.0:
     resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}

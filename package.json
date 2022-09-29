@@ -1,14 +1,15 @@
 {
-  "name": "vite-template-solid",
+  "name": "solidjs-todoapp",
   "version": "0.0.0",
   "description": "",
+  "private": true,
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "sass": "^1.55.0",
@@ -16,10 +17,14 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
-    "@fundamental-styles/common-css": "0.25.0-rc.28",
+    "@fundamental-styles/common-css": "0.25.0-rc.26",
+    "@sap-theming/theming-base-content": "^11.1.41",
     "@ui5/webcomponents": "^1.7.1",
     "@ui5/webcomponents-base": "^1.7.1",
-    "fundamental-styles": "0.25.0-rc.28",
+    "@ui5/webcomponents-fiori": "^1.7.1",
+    "@ui5/webcomponents-icons": "^1.7.1",
+    "@ui5/webcomponents-theming": "^1.7.1",
+    "fundamental-styles": "^0.25.0-rc.26",
     "solid-js": "^1.5.1"
   }
 }

@@ -1,0 +1,17 @@
+@import '../node_modules/@fundamental-styles/common-css/dist/sass/common-css-mixins.scss';
+
+.todo-list {
+    &__wrapper{
+        @include sap-flex-align-items(center);
+        @include sap-flex-gap(tiny, column);
+    
+        width: 100%;
+    }
+
+    &__title{
+        @include sap-font-family(regular);
+        @include sap-font-size(large);
+
+        flex: auto;
+    }
+}

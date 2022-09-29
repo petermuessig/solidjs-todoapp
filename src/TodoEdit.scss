@@ -1,0 +1,20 @@
+@import '../node_modules/@fundamental-styles/common-css/dist/sass/common-css-mixins.scss';
+
+.todo-edit {
+    &__footer {
+        @include sap-flex-gap(tiny);
+        @include sap-flex-align-content(center);
+        @include sap-flex-justify(end);
+    
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    &__footer-btn {
+        min-width: 4rem;
+    }
+
+}
+
+    
