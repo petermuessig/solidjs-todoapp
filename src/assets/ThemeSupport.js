@@ -4,6 +4,7 @@ import { attachThemeLoaded } from "@ui5/webcomponents-base/dist/theming/ThemeLoa
 // include all theme related resources from UI5 Web Components
 import "@ui5/webcomponents-theming/dist/Assets.js";
 import "@ui5/webcomponents/dist/generated/json-imports/Themes.js";
+import "@ui5/webcomponents-fiori/dist/generated/json-imports/Themes.js";
 
 // listen to theme changes and load the delta theming properties of 
 // Fundamental Library Styles to ensure proper theming!
