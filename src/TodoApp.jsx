@@ -25,6 +25,7 @@ import "@ui5/webcomponents-fiori/dist/ShellBarItem";
 
 import "@ui5/webcomponents-icons/dist/palette";
 import "@ui5/webcomponents-icons/dist/world";
+import "@ui5/webcomponents-icons/dist/source-code";
 
 import TodoList from "./TodoList";
 import TodoListItem from "./TodoListItem";
@@ -121,6 +122,9 @@ const TodoApp = () => {
       const url = new URL(document.location.href);
       url.search = `?sap-ui-language=${event.detail.targetItem.dataset.theme || "en"}`;
       document.location.href = url.toString();
+    },
+    openGitHub = () => {
+      window.open("https://github.com/petermuessig/solidjs-todoapp", "_blank", "noopener");
     };
 
   // ************
@@ -138,6 +142,7 @@ const TodoApp = () => {
               <img slot="logo" src={logo} alt="Logo" class="todo-wrapper__logo"/>
               <ui5-shellbar-item icon="world" text={i18nBundle.getText("LANGUAGE")} on:click={selectLanguage} />
               <ui5-shellbar-item icon="palette" text={i18nBundle.getText("THEME")} on:click={selectTheme} />
+              <ui5-shellbar-item icon="source-code" text="GitHub" on:click={openGitHub} />
               <ui5-avatar slot="profile" size="XS" initials="FC" />
           </ui5-shellbar>
           <LanguageSwitch ref={languageSwitch} headerText={i18nBundle.getText("LANGUAGE")} onLanguageSelected={languageSelected}/>
